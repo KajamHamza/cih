@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "trained_at": "2025-12-07T10:34:51.550362",
+  "data_type": "real_business_transactions",
+  "config": {
+    "seq_length": 8,
+    "forecast_horizon": 4,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "feature_cols": [
+      "season_type",
+      "distributers",
+      "fixed_pay",
+      "cost_of_raw_materials",
+      "other_expenditure",
+      "cash_out",
+      "net_profit_margin",
+      "week_of_year",
+      "cash_flow",
+      "profit_trend_4w",
+      "cash_in_lag1",
+      "cash_out_lag1"
+    ],
+    "target_col": "cash_in"
+  },
+  "scaler_params": {
+    "target_mean": 3754039.3333333335,
+    "target_std": 1578367.7074373956
+  },
+  "performance": {
+    "test_mae": 227436.6875,
+    "test_rmse": 268366.34375,
+    "test_r2": 0.9678951501846313,
+    "test_mape": 6.898174434900284
+  },
+  "epochs_trained": 65,
+  "best_val_loss": 0.02370689995586872
+}
